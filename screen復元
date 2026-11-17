@@ -1,0 +1,61 @@
+function renderByCurrentScreen() {
+
+  document
+    .querySelectorAll(".screen")
+    .forEach(screen => {
+
+      screen.classList.add("hidden");
+
+    });
+
+  switch (state.currentScreen) {
+
+    case "settings":
+
+      document
+        .getElementById(
+          "settings-screen"
+        )
+        .classList.remove("hidden");
+
+      break;
+
+    case "draft":
+
+      document
+        .getElementById(
+          "draft-screen"
+        )
+        .classList.remove("hidden");
+
+      drawDraftScreen();
+
+      break;
+
+    case "edit":
+
+      document
+        .getElementById(
+          "edit-screen"
+        )
+        .classList.remove("hidden");
+
+      renderEditor();
+
+      break;
+
+    case "result":
+
+      document
+        .getElementById(
+          "result-screen"
+        )
+        .classList.remove("hidden");
+
+      renderResult();
+
+      break;
+
+  }
+
+}
