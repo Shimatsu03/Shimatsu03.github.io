@@ -1,0 +1,7 @@
+function restartApp() {
+
+  clearState();
+
+  location.reload();
+
+}
