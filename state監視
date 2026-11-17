@@ -1,0 +1,25 @@
+function selectSong(songId) {
+
+  state.selectedSongIds.push(songId);
+
+  saveState();
+
+  updateSelectedSongs();
+
+  drawDraftScreen();
+
+}
+
+function passCandidates() {
+
+  if (state.remainingPasses <= 0) {
+    return;
+  }
+
+  state.remainingPasses--;
+
+  saveState();
+
+  drawDraftScreen();
+
+}
