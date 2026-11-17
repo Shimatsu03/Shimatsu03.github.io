@@ -1,0 +1,24 @@
+document.addEventListener(
+  "DOMContentLoaded",
+  init
+);
+
+async function init() {
+
+  await loadSongs();
+
+  const restored = loadState();
+
+  if (restored) {
+
+    renderByCurrentScreen();
+
+    return;
+
+  }
+
+  initSettings();
+
+  bindEvents();
+
+}
