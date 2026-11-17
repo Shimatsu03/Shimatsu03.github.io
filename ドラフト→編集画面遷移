@@ -1,0 +1,17 @@
+if (
+  state.selectedSongIds.length >=
+  state.settings.targetCount
+) {
+
+  buildSetlistItems();
+
+  state.currentScreen = "edit";
+
+  saveState();
+
+  showScreen("edit");
+
+  renderEditor();
+
+  return;
+}
