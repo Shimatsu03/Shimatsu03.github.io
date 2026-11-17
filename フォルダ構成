@@ -1,0 +1,17 @@
+sakurazaka-setlist-draft/
+
+├─ index.html
+│
+├─ css/
+│  └─ style.css
+│
+├─ js/
+│  ├─ state.js
+│  └─ app.js
+│
+├─ data/
+│  └─ songs.json
+│
+└─ libs/
+   ├─ sortable.min.js
+   └─ html2canvas.min.js
