@@ -1,0 +1,10 @@
+if (
+  state.selectedSongIds.length >=
+  state.settings.targetCount
+) {
+
+  alert("ドラフト完了");
+
+  return;
+
+}
