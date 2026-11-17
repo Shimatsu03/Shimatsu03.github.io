@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>櫻坂46 Setlist Draft</title>
+
+<link rel="stylesheet" href="./css/style.css">
+
+<script defer src="./js/state.js"></script>
+<script defer src="./js/app.js"></script>
+
+</head>
+<body>
+
+<div id="app">
+
+<section id="settings-screen">
+
+<h1>櫻坂46 Setlist Draft</h1>
+
+<div class="setting-group">
+
+<label>指名曲数</label>
+
+<select id="target-count"></select>
+
+</div>
+
+<div class="setting-group">
+
+<label>候補曲数</label>
+
+<select id="candidate-count"></select>
+
+</div>
+
+<div class="setting-group">
+
+<label>パス回数</label>
+
+<select id="pass-count"></select>
+
+</div>
+
+<p id="song-count">
+対象楽曲数：0曲
+</p>
+
+<p id="validation-message"></p>
+
+<button id="start-btn">
+ドラフト開始
+</button>
+
+</section>
+
+
+<section id="draft-screen" class="hidden">
+
+<h1>櫻坂46 Setlist Draft</h1>
+
+<div class="status">
+
+<div id="progress-text"></div>
+
+<div id="pass-text"></div>
+
+</div>
+
+<div id="candidate-list"></div>
+
+<button id="pass-btn">
+パス
+</button>
+
+<hr>
+
+<details open>
+
+<summary id="selected-summary">
+選択済み楽曲（0）
+</summary>
+
+<div id="selected-song-list"></div>
+
+</details>
+
+</section>
+
+</div>
+
+</body>
+</html>
