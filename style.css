@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 16px;
+  font-family: sans-serif;
+  background: #ffffff;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  color: #d86a9f;
+  text-align: center;
+}
+
+.setting-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+select,
+button {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background: #d86a9f;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.song-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.release {
+  color: #888;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 8px;
+  border-radius: 15px;
+  background: #f5d3e2;
+}
